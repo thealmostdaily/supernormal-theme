@@ -3,11 +3,11 @@
      {%- assign page_paths = site.header_pages | default: default_paths -%}
 
      {% if jekyll.environment != "production" %}
-     <h1>  <a class="red link hover-black f2 dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">Development: {{ site.title | escape }}</a></h1>
+     <h1>  <a class="red link hover-black f3 f2-ns dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">Development: {{ site.title | escape }}</a></h1>
 
 
      {% else %}
-     <h1>  <a class="blue link hover-black f2 dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+     <h1>  <a class="blue link hover-black f3 f2-ns dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
 
      {% endif %}
 
@@ -26,6 +26,6 @@
 </nav> -->
 
 
-<a class="near-black link hover-blue f2 dib mr4" href="/work/">Work</a>
+<a class="near-black link hover-blue f3 f2-ns dib mr4" href="/work/">Work</a>
 
-<a class="near-black link hover-blue f2 dib mr4" href="/about/">About</a>
+<a class="near-black link hover-blue f3 f2-ns dib mr4" href="/about/">About</a>
