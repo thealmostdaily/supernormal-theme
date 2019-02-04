@@ -1,0 +1,8 @@
+---
+
+title: This is supernormal
+email: your-email@example.com
+
+plugins:
+- jekyll-feed
+- jekyll-seo-tag

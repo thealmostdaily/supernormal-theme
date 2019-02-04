@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<article  class="measure-wide lh-copy">
+
+    <header>
+
+        <h1 class="near-black mw7 lh mb0">{{ page.title }}</h1>
+        <p class="silver mt0"><time>{{ page.date | date: "%b %-d,  %Y" }}</time></p>
+
+    </header>
+
+    {{ content }}
+
+</article>

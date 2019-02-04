@@ -1,0 +1,31 @@
+<nav class="pv3 ml0">
+<div>  {%- assign default_paths = site.pages | map: "path" -%}
+     {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+     {% if jekyll.environment != "production" %}
+     <h1>  <a class="red link hover-black f2 dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">Development: {{ site.title | escape }}</a></h1>
+
+
+     {% else %}
+     <h1>  <a class="blue link hover-black f2 dib mb3" title="Home" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+
+     {% endif %}
+
+
+</div>
+
+<!-- exlusion of specific pages need to be fixed -->
+<!-- <div>
+  {%- for path in page_paths -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.title !="Home" and my_page.title != "Colophon" and my_page.title != "404.html" -%}
+    <a class="near-black link hover-blue f5 f2-ns dib mr4" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {%- endif -%}
+  {% endfor -%}
+  </div>
+</nav> -->
+
+
+<a class="near-black link hover-blue f2 dib mr4" href="/work/">Work</a>
+
+<a class="near-black link hover-blue f2 dib mr4" href="/about/">About</a>
